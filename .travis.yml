@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "node"
+
+jobs:
+  include:
+    - stage: install
+      script: npm install
+      skip_cleanup: true
+    - stage: dist
+      script:
+      - npm run build
+      - npx semantic-release
+      if: branch = master
