@@ -1,0 +1,9 @@
+<div class="label" v-if="this.label">
+    <label for="edit" v-innerHTML="this.label"></label>
+</div>
+<div class="static">
+    <span class="static" v-innerHTML="this.value"></span><span class="fa fa-edit" v-if="this.hasButton"></span>
+</div>
+<div class="edit" hidden>
+    <input type="text" class="edit" v-value="this.value" /><span class="fa fa-check"></span>
+</div>

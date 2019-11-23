@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "es6",
+        "outDir": "./dist/",
+        "baseUrl": "./components/",
+        "module":"ES2015",
+        "sourceMap": true,
+        "declaration": true,
+        "moduleResolution": "node",
+        "declarationMap": true,
+        "removeComments": true,
+        "esModuleInterop": true
+    },
+    "include": [
+        "components/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "components/**/*.spec.ts",
+        "components/**/__mock__/*",
+        "components/**/__spec__/*"
+    ]
+}

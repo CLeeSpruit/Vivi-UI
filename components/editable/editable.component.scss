@@ -1,0 +1,14 @@
+editable {
+    > div {
+        display: inline-flex;
+
+        span.fa {
+            margin-left: 0.5em;
+            line-height: 1.5em;
+        }
+    }
+
+    div.label label::after {
+        content: ':';
+    }
+}

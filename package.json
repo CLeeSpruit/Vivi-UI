@@ -1,0 +1,57 @@
+{
+    "name": "@cspruit/vivi-ui",
+    "version": "1.0.0",
+    "description": "UI Library based off of the Vivi Framework",
+    "main": "dist/vivi.js",
+    "files": [
+        "components/**/*",
+        "dist/**/*"
+    ],
+    "scripts": {
+        "build": "npm run flush && webpack-cli",
+        "flush": "rm -r ./dist || true",
+        "nuke": "rm -r ./node_modules",
+        "watch": "webpack-cli -w",
+        "semantic-release": "semantic-release",
+        "commit": "git-cz"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CassandraSpruit/Vivi-UI.git"
+    },
+    "keywords": [
+        "ui",
+        "vivi",
+        "library"
+    ],
+    "author": "Cassandra Spruit",
+    "license": "GPL-3.0-or-later",
+    "bugs": {
+        "url": "https://github.com/CassandraSpruit/Vivi-UI/issues"
+    },
+    "homepage": "https://github.com/CassandraSpruit/Vivi-UI#readme",
+    "devDependencies": {
+        "@cspruit/vivi": "^4.1.7",
+        "@semantic-release/changelog": "^3.0.5",
+        "@semantic-release/git": "^7.0.18",
+        "@types/node": "^12.6.8",
+        "awesome-typescript-loader": "^5.2.1",
+        "css-loader": "^3.2.0",
+        "cz-conventional-changelog": "^3.0.2",
+        "file-loader": "^4.3.0",
+        "html-loader": "^0.5.5",
+        "node-sass": "^4.13.0",
+        "sass-loader": "^8.0.0",
+        "semantic-release": "^15.13.30",
+        "style-loader": "^1.0.0",
+        "typescript": "^3.5.3",
+        "url-loader": "^2.3.0",
+        "webpack": "^4.38.0",
+        "webpack-cli": "^3.3.6"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
