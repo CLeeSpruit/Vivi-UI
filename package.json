@@ -42,7 +42,7 @@
         "html-loader": "^0.5.5",
         "node-sass": "^4.13.0",
         "sass-loader": "^8.0.0",
-        "semantic-release": "^15.13.30",
+        "semantic-release": "^17.2.3",
         "style-loader": "^1.0.0",
         "typescript": "^3.5.3",
         "url-loader": "^2.3.0",
